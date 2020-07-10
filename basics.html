@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("button").click(function() {
+            $(".paragraph").hide();
+        });
+
+        $("#p1").click(function () {
+            $(this).hide();
+        });
+    });
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1" class="paragraph">Lorem, ipsum.Exercitationem, tenetur.</p>
+    <p class="paragraph">Lorem, ipsum.Accusamus, non?Illo, blanditiis.</p>
+    <button>Click to hide them all</button>
+</body>
+</html>
